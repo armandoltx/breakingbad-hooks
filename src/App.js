@@ -44,6 +44,7 @@ function App() {
   return(
     <div className="contenedor">
       <Frase frase={frase}/>
+      <button onClick={consultaAPI}>Generar nueva Cita</button>
     </div>
   );
 }
