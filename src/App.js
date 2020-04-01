@@ -41,6 +41,11 @@ function App() {
 
   console.log(frase);
 
+  // en el button si ponemos consultaAPI sin parentesis (<button onClick={consultaAPI}>), la funcion no se ejecuta hasta q se presione el boton
+  // es lo mismo que poner: <button onClick={() => consultaAPI()}>
+  // Si ponemos el parentesis en la funcion (<button onClick={consultaAPI()}>) es una llamada a la funcion,
+  // la funcion se va a ejecutar al cargarse, no esperara al event listener
+
   return(
     <div className="contenedor">
       <Frase frase={frase}/>
